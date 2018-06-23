@@ -17,16 +17,9 @@ numpy==1.13.3
 oauth2==1.9.0.post1
 oauthlib==2.0.6
 pbr==3.1.1
-psycopg2==2.7.3.2
-python-twitter==3.3
 pytz==2017.3
 requests==2.18.4
 requests-oauthlib==0.8.0
-six==1.11.0
-stevedore==1.28.0
-stripe==1.79.1
-textblob==0.15.0
-unity-lens-photos==1.0
 urllib3==1.22
 vine==1.1.4
 virtualenv==15.1.0
