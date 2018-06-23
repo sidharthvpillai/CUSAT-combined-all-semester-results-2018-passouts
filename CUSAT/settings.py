@@ -26,7 +26,7 @@ SECRET_KEY = 't&0*wak0n-go7zjymb3!^rj8nd)objzq4&b5w*vkun$hvxpa44'
 DEBUG = True
 
 ALLOWED_HOSTS = ['sidresults.herokuapp.com']
-#ALLOWED_HOSTS =[]
+ALLOWED_HOSTS =[]
 
 # Application definition
 
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'CUSAT.urls'
