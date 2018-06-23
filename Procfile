@@ -1,1 +1,1 @@
-web: gunicorn jpevents.wsgi --log-file -
+web: gunicorn CUSAT.wsgi --log-file -
