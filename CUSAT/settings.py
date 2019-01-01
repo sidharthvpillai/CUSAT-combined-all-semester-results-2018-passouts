@@ -25,8 +25,8 @@ SECRET_KEY = 't&0*wak0n-go7zjymb3!^rj8nd)objzq4&b5w*vkun$hvxpa44'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sidresults.herokuapp.com']
-#ALLOWED_HOSTS =[]
+#ALLOWED_HOSTS = ['sidresults.herokuapp.com']
+ALLOWED_HOSTS =[]
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cusat',
     'api'
+  
 ]
 
 MIDDLEWARE = [
@@ -78,11 +79,14 @@ WSGI_APPLICATION = 'CUSAT.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd9nvf43gvhai01',
+        'USER': 'udxgjmwgpygstj',
+        'PASSWORD': 'f17195ecb25e960bbbb498e1922066539ef8bff8c89dcb8b105f86fd446d57d3',
+        'HOST': 'ec2-54-235-178-189.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
